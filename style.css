@@ -1,0 +1,259 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* navbar */
+#navbar{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+#navbar::before{
+content: "";
+background-color: black;
+position: absolute;
+top: 0px;
+left: 0px;
+height: 100%;
+width: 100%;
+z-index: -1; /* ond element mele innond use madakke use madodu */
+opacity: 0.5;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    color: white;
+    font-size: 15px;
+}
+
+#navbar ul li a{
+    display: block;
+   padding: 5px 20px;
+   border-radius: 20px;
+   text-decoration: none;
+   color: white;
+   text-shadow: 1px 1px 1px black;
+}
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+#navbar form input{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 5px;
+}
+#navbar form{
+    margin-left: 500px;
+}
+
+/* logo and images */
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 28px 186px;
+    height: 346px;  /* not paddding coz it wiil also ocupy spce ,but we want to move a he secion  */
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    content: "";
+background: url('https://cdn.pixabay.com/photo/2014/04/05/11/27/buffet-315691__340.jpg') no-repeat center center/cover;
+position: absolute;
+height: 70%;
+top: 0px;
+left: 0px;
+width: 100%;
+z-index: -1; /* ond element mele innond use madakke use madodu */
+opacity: 0.89;
+}
+#home h1{
+    color: rgb(211, 71, 16);
+    text-align: center;
+    text-shadow: 5px 4px 4px black;
+}
+#home p{
+    color: white;
+    text-align: center;
+    text-shadow: 5px 4px 4px black;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+   
+}
+
+/* services */
+#services{
+    margin: 30px 30px -7px 30px;
+    display: flex;
+}
+#services .box img{
+height: 180px;
+display: block;
+margin: auto;   /* margin: auto; works only with display block  */
+}
+#services .box{
+    border: 2px solid brown;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black;
+    background-color:  #e7c586;
+}
+#services .box p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+}
+
+/* client section  */
+
+#client-section{
+height: 365px;
+
+}
+#client-section::before{
+content: "";
+position: absolute;
+background: url('https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=600')no-repeat center center/cover;
+width: 100%;
+height: 55%;
+z-index: -1;
+opacity: 0.6;
+}
+ 
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+}
+
+#client-1 img{
+    height: 96px;
+    margin-top: 20px;
+    padding: 45px;
+    stroke: black;
+}
+#client-2 img{
+    height: 99px;
+    margin-top:20px;
+    padding: 45px;
+}
+#client-3 img{
+    height: 130px;
+    margin-top: 20px;
+    padding: 45px;
+}
+#client-4 img{
+    height: 60px;
+    margin-top: 20px;
+    padding: 45px;
+}
+#client-5 img{
+    height: 61px;
+    margin-top: 20px;
+    padding: 45px;
+}
+
+/* contact section  */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('https://media.istockphoto.com/photos/-picture-id1311934969?b=1&k=20&m=1311934969&s=170667a&w=0&h=UQ3F8CE5zam5mT5swIliZ9nO7dhX4ZzsALMufFdv6Ys=') no-repeat center center/cover;
+}
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 21px;
+}
+#contactbox input,#contactbox textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+#contactbox form{
+    width: 40%;
+    
+}
+#contactbox label{
+   font-size: 15px;
+   font-family: 'Kanit', sans-serif;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+
+/* utility class */
+.h-primary{
+    font-family: 'Boogaloo', cursive;
+    font-size: 60px;
+    padding: 3px;
+    color:  rgb(211, 71, 16);
+    text-shadow: 3px 3px 3px black;
+}
+.h-secondary{
+    font-size: 30px;
+    padding: 10px;
+}
+.btn{
+    padding: 5px 10px;
+    border: 2px solid black;
+    background-color: rgb(211, 71, 16);
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 5px 5px 4px black;
+    transition: all 0.5s ease-in-out;
+}
+.btn:hover{
+    background-color: black;
+    transform: scale(2);
+}
+
+
+
+.center{
+    text-align: center;
+}
+.h-secondary{
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    padding: 10px;
+}
